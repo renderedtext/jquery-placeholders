@@ -1,0 +1,3 @@
+h1. jquery-placeholders
+
+Support old browsers like a pro!
