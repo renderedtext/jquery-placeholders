@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>jquery-placeholders demo</title>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script> 
+    <script type="text/javascript" src="jquery.placeholders.js"></script>
+
+    <script type="text/javascript" charset="utf-8">
+      $(document).ready(function() {
+        function supportsInputPlaceholder() {
+          var i = document.createElement('input');
+          return 'placeholder' in i;
+        }
+
+        if (supportsInputPlaceholder()) {
+          $("#intro").text("Yay, your browser supports placeholder text, nothing to do.");
+        } else {
+          $("#intro").text("Your browser does not support placeholder text, script to the rescue.");
+          $("#testForm").placeholders(["#name", "#email"]);
+        }
+
+        $("#testForm").submit(function() {
+          $("#intro").text("I would submit " + $(this).serialize());
+          return false;
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <h2>jquery-placeholders demo</h2>
+
+    <p id="intro"></p>
+
+    <form action="/" method="get" id="testForm">
+      <input type="text" name="name" value="" id="name" placeholder="Your name">
+      <input type="text" name="email" value="" id="email" placeholder="Email">
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
