@@ -1,3 +1,10 @@
+/*!
+ * jQuery placeholders plugin
+ * https://github.com/renderedtext/jquery-placeholders
+ *
+ * Copyright 2011 Marko Anastasov, Rendered Text
+ * MIT licensed.
+ */
 
 // Puts placeholder text as a value of an input field.
 //
