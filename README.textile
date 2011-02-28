@@ -1,3 +1,11 @@
 h1. jquery-placeholders
 
-Support old browsers like a pro!
+jQuery plugin for input hints which uses your placeholder HTML5 attribute. That way you can write markup that works in modern browsers, and degrade gracefully.
+
+h2. Example
+
+<pre><code>$("#someForm").placeholders(["#name", "#email"]);</code></pre>
+
+This would load placeholder text from the placeholder attribute, and prevent the placeholder text from being submitted.
+
+See @demo.html@ for a full example.
