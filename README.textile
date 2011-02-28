@@ -1,6 +1,6 @@
 h1. jquery-placeholders
 
-jQuery plugin for input hints which uses your placeholder HTML5 attribute. That way you can write markup that works in modern browsers, and degrade gracefully.
+jQuery plugin for input hints which uses your placeholder HTML5 attributes, so you can write markup for modern browsers first and degrade gracefully.
 
 h2. Example
 
